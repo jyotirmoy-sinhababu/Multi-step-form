@@ -6,9 +6,9 @@ const SelectPlan = () => {
       <h2>Select your plan</h2>
       <p>you have the option of monthly or yearly billing</p>
       <div>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
       </div>
       <div>
         <label className='switch'>
