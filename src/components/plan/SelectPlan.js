@@ -8,11 +8,11 @@ const SelectPlan = () => {
       <div>
         <button>1</button>
         <button>2</button>
-        <button>3</button>
+        <button>3 </button>
       </div>
       <div>
         <label className='switch'>
-          <input type='checkbox' checked />
+          <input type='checkbox' />
           <span className='slider round'></span>
         </label>
       </div>

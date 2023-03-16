@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import YourInfo from '../../components/info/YourInfo';
-import SelectPlan from '../../components/plan/SelectPlan';
-import AddOn from '../../components/addOns/AddOn';
+import SideBar from '../../components/sideBar/SideBar';
+import Main from '../main/Main';
 
 const Home = () => {
+  const [inputData, setInputData] = useState({
+    email: '',
+    name: '',
+    number: '',
+    monthlyPlan: '',
+    yearlyPlan: '',
+    addOnsMonthly: '',
+    addOnsYearly: '',
+  });
+
   return (
     <div>
-      <form>
-        <YourInfo />
-        <SelectPlan />
-        <AddOn />
-      </form>
+      <SideBar />
+      <Main />
     </div>
   );
 };
