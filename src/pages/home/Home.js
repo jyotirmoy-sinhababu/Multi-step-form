@@ -14,7 +14,6 @@ const Home = () => {
     monthlyProfile: '',
   });
 
-  const [isOn, setIsOn] = useState(true);
   const [count, setCount] = useState(1);
 
   // control form navigation

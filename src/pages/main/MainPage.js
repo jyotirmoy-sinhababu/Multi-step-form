@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import YourInfo from '../../components/info/YourInfo';
 import SelectPlan from '../../components/plan/SelectPlan';
 import AddOn from '../../components/addOns/AddOn';
 
 const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
+  const [isActive, setIsActive] = useState(true);
+
   console.log(count);
   return (
     <div>
@@ -12,7 +14,12 @@ const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
         {count == 1 ? (
           <YourInfo setInputData={setInputData} inputData={inputData} />
         ) : count == 2 ? (
-          <SelectPlan setInputData={setInputData} inputData={inputData} />
+          <SelectPlan
+            setInputData={setInputData}
+            inputData={inputData}
+            isActive={isActive}
+            setIsActive={setIsActive}
+          />
         ) : count == 3 ? (
           <AddOn setInputData={setInputData} inputData={inputData} />
         ) : null}

@@ -1,10 +1,13 @@
 import React from 'react';
 
+import './selectPlan.css';
+
 import advance from '../../assets/advanced.svg';
 import arcade from '../../assets/arcade.svg';
 import pro from '../../assets/pro.svg';
+import ToggleBtn from '../toggleBtn/ToggleBtn';
 
-const SelectPlan = ({ setInputData, inputData }) => {
+const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
   //controls the click of add on buttons
 
   const handleClick = (amount) => {
@@ -63,10 +66,7 @@ const SelectPlan = ({ setInputData, inputData }) => {
         </button>
       </div>
       <div>
-        <label className='switch'>
-          <input type='checkbox' />
-          <span className='slider round'></span>
-        </label>
+        <ToggleBtn setIsActive={setIsActive} isActive={isActive} />
       </div>
     </>
   );
