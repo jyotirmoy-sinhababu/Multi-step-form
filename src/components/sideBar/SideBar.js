@@ -1,8 +1,10 @@
 import React from 'react';
 
+import SideImg from '../../assets/sidebar.svg';
+
 const SideBar = () => {
   return (
-    <>
+    <div>
       <div>
         <div>
           <p>1</p>
@@ -39,7 +41,7 @@ const SideBar = () => {
           <p>SUMMARY</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
