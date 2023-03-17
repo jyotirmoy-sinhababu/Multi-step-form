@@ -5,7 +5,7 @@ const YourInfo = ({ setInputData, inputData }) => {
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
-  console.log(inputData);
+  // console.log(inputData);
 
   return (
     <div>

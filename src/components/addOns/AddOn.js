@@ -1,10 +1,24 @@
 import React from 'react';
 
-const AddOn = () => {
+const AddOn = ({ setInputData, inputData }) => {
+  // monitor change
+  const handleChange = (e) => {
+    setInputData({ ...inputData, [e.target.name]: e.target.value });
+  };
+
+  console.log(inputData);
+
   return (
     <div>
       <div>
-        <input type='checkbox' value='1' />
+        <input
+          type='checkbox'
+          value='1'
+          name='monthlyService'
+          onChange={(e) => {
+            handleChange(e);
+          }}
+        />
         <div>
           <label> Online Service</label>
           <p>Access to multiplayer game</p>
@@ -14,7 +28,14 @@ const AddOn = () => {
         </div>
       </div>
       <div>
-        <input type='checkbox' value='1' />
+        <input
+          type='checkbox'
+          value='2'
+          name='monthlyStorage'
+          onChange={(e) => {
+            handleChange(e);
+          }}
+        />
         <div>
           <label> Larger Storage</label>
           <p>Extra 1TB of cloud storage </p>
@@ -24,7 +45,14 @@ const AddOn = () => {
         </div>
       </div>
       <div>
-        <input type='checkbox' value='1' />
+        <input
+          type='checkbox'
+          value='2'
+          name='monthlyProfile'
+          onChange={(e) => {
+            handleChange(e);
+          }}
+        />
         <div>
           <label> Customizable Profile</label>
           <p>Custom theme on your profile </p>

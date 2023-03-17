@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-
-import SideBar from '../../components/sideBar/SideBar';
-import Main from '../main/Main';
-
+import SideBar from '../../components/sidebar/SideBar';
+import MainPage from '../main/MainPage';
 const Home = () => {
   // All states
   const [inputData, setInputData] = useState({
@@ -11,8 +9,9 @@ const Home = () => {
     number: '',
     monthlyPlan: '',
     yearlyPlan: '',
-    addOnsMonthly: '',
-    addOnsYearly: '',
+    monthlyService: '',
+    monthlyStorage: '',
+    monthlyProfile: '',
   });
 
   const [isOn, setIsOn] = useState(true);
@@ -33,7 +32,7 @@ const Home = () => {
   return (
     <div>
       <SideBar count={count} />
-      <Main
+      <MainPage
         setInputData={setInputData}
         inputData={inputData}
         nextBtn={nextBtn}

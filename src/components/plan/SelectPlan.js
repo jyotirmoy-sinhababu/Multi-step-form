@@ -4,13 +4,25 @@ import advance from '../../assets/advanced.svg';
 import arcade from '../../assets/arcade.svg';
 import pro from '../../assets/pro.svg';
 
-const SelectPlan = () => {
+const SelectPlan = ({ setInputData, inputData }) => {
+  //controls the click of add on buttons
+
+  const handleClick = (amount) => {
+    setInputData({ ...inputData, monthlyPlan: amount });
+  };
+  console.log(inputData);
   return (
     <>
       <h2>Select your plan</h2>
       <p>you have the option of monthly or yearly billing</p>
       <div className='plan-btn-cnt'>
-        <button className='plan-btn'>
+        <button
+          type='button'
+          className='plan-btn'
+          onClick={() => {
+            handleClick(9);
+          }}
+        >
           <div>
             <img src={arcade} alt='arcade' className='img' />
           </div>
@@ -19,7 +31,13 @@ const SelectPlan = () => {
             <p>$9/mo</p>
           </div>
         </button>
-        <button className='plan-btn'>
+        <button
+          className='plan-btn'
+          type='button'
+          onClick={() => {
+            handleClick(12);
+          }}
+        >
           <div>
             <img src={advance} alt='advance' className='img' />
           </div>
@@ -28,7 +46,13 @@ const SelectPlan = () => {
             <p>$12/mo</p>
           </div>
         </button>
-        <button className='plan-btn'>
+        <button
+          className='plan-btn'
+          type='button'
+          onClick={() => {
+            handleClick(15);
+          }}
+        >
           <div>
             <img src={pro} alt='pro' className='img' />
           </div>

@@ -4,7 +4,7 @@ import YourInfo from '../../components/info/YourInfo';
 import SelectPlan from '../../components/plan/SelectPlan';
 import AddOn from '../../components/addOns/AddOn';
 
-const Main = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
+const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
   console.log(count);
   return (
     <div>
@@ -29,4 +29,4 @@ const Main = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
   );
 };
 
-export default Main;
+export default MainPage;
