@@ -4,17 +4,17 @@ import YourInfo from '../../components/info/YourInfo';
 import SelectPlan from '../../components/plan/SelectPlan';
 import AddOn from '../../components/addOns/AddOn';
 
-const Main = ({ count, backBtn, nextBtn }) => {
+const Main = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
   console.log(count);
   return (
     <div>
       <form>
         {count == 1 ? (
-          <YourInfo />
+          <YourInfo setInputData={setInputData} inputData={inputData} />
         ) : count == 2 ? (
-          <SelectPlan />
+          <SelectPlan setInputData={setInputData} inputData={inputData} />
         ) : count == 3 ? (
-          <AddOn />
+          <AddOn setInputData={setInputData} inputData={inputData} />
         ) : null}
       </form>
       <div>

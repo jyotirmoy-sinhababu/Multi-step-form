@@ -9,8 +9,8 @@ const SelectPlan = () => {
     <>
       <h2>Select your plan</h2>
       <p>you have the option of monthly or yearly billing</p>
-      <div>
-        <button>
+      <div className='plan-btn-cnt'>
+        <button className='plan-btn'>
           <div>
             <img src={arcade} alt='arcade' className='img' />
           </div>
@@ -19,7 +19,7 @@ const SelectPlan = () => {
             <p>$9/mo</p>
           </div>
         </button>
-        <button>
+        <button className='plan-btn'>
           <div>
             <img src={advance} alt='advance' className='img' />
           </div>
@@ -28,7 +28,7 @@ const SelectPlan = () => {
             <p>$12/mo</p>
           </div>
         </button>
-        <button>
+        <button className='plan-btn'>
           <div>
             <img src={pro} alt='pro' className='img' />
           </div>

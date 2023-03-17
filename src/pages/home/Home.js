@@ -33,7 +33,13 @@ const Home = () => {
   return (
     <div>
       <SideBar count={count} />
-      <Main nextBtn={nextBtn} backBtn={backBtn} count={count} />
+      <Main
+        setInputData={setInputData}
+        inputData={inputData}
+        nextBtn={nextBtn}
+        backBtn={backBtn}
+        count={count}
+      />
     </div>
   );
 };
