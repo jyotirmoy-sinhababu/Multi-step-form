@@ -1,0 +1,9 @@
+.form-cnt {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-right: 55px;
+  gap: 60px;
+  height: 550px;
+  width: 500px;
+}

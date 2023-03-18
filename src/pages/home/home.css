@@ -1,4 +1,9 @@
 .home-cnt {
   display: flex;
-  gap: 80px;
+  gap: 60px;
+  border-radius: 9px;
+  height: 550px;
+  width: 800px;
+  padding: 12px;
+  box-shadow: 5px 10px 18px #888888;
 }

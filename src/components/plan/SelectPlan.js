@@ -15,9 +15,12 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
   };
   console.log(inputData);
   return (
-    <>
-      <h2>Select your plan</h2>
-      <p>you have the option of monthly or yearly billing</p>
+    <div className='plan-cnt'>
+      <div className='plan-small-cnt'>
+        <h2>Select your plan</h2>
+        <p>you have the option of monthly or yearly billing</p>
+      </div>
+
       <div className='plan-btn-cnt'>
         <button
           type='button'
@@ -68,7 +71,7 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
       <div>
         <ToggleBtn setIsActive={setIsActive} isActive={isActive} />
       </div>
-    </>
+    </div>
   );
 };
 

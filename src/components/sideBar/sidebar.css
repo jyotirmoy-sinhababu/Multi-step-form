@@ -3,13 +3,13 @@
   background-repeat: no-repeat;
   flex-direction: column;
   padding-left: 19px;
-  padding-top: 19px;
+  padding-top: 42px;
   gap: 12px;
   position: relative;
   z-index: 100;
   background: url('../../assets/sidebar.svg');
-  height: 550px;
-  width: 250px;
+  height: 500px;
+  width: 270px;
   border-radius: 7px;
 }
 

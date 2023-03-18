@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import SideBar from '../../components/sidebar/SideBar';
-import MainPage from '../container/Container';
-
+import Container from '../../pages/container/Container';
 import './home.css';
 
 const Home = () => {
@@ -34,7 +33,7 @@ const Home = () => {
   return (
     <div className='home-cnt'>
       <SideBar count={count} />
-      <MainPage
+      <Container
         setInputData={setInputData}
         inputData={inputData}
         nextBtn={nextBtn}
