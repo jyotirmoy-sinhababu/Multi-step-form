@@ -1,0 +1,10 @@
+.info-input-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-cnt {
+  display: flex;
+  flex-direction: column;
+}
