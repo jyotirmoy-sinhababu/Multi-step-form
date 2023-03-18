@@ -1,14 +1,31 @@
 .sidebar-cnt {
   display: flex;
+  background-repeat: no-repeat;
   flex-direction: column;
+  padding-left: 19px;
+  padding-top: 19px;
   gap: 12px;
   position: relative;
   z-index: 100;
   background: url('../../assets/sidebar.svg');
+  height: 550px;
+  width: 250px;
+  border-radius: 7px;
 }
 
 .sidebar-small-cnt {
   display: flex;
+  align-items: center;
   gap: 19px;
   z-index: 100;
+}
+
+.sidebar-num-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
 }

@@ -9,7 +9,7 @@ const SideBar = () => {
     <div className='sidebar-cnt'>
       {/* <Banner /> */}
       <div className='sidebar-small-cnt'>
-        <div>
+        <div className='sidebar-num-cnt'>
           <p>1</p>
         </div>
         <div>
@@ -18,7 +18,7 @@ const SideBar = () => {
         </div>
       </div>
       <div className='sidebar-small-cnt'>
-        <div>
+        <div className='sidebar-num-cnt'>
           <p>2</p>
         </div>
         <div>
@@ -27,7 +27,7 @@ const SideBar = () => {
         </div>
       </div>
       <div className='sidebar-small-cnt'>
-        <div>
+        <div className='sidebar-num-cnt'>
           <p>3</p>
         </div>
         <div>
@@ -36,7 +36,7 @@ const SideBar = () => {
         </div>
       </div>
       <div className='sidebar-small-cnt'>
-        <div>
+        <div className='sidebar-num-cnt'>
           <p>4</p>
         </div>
         <div>
