@@ -20,7 +20,7 @@ const SideBar = () => {
         </div>
         <div>
           <p>STEP 2</p>
-          <p>SELECT YOUR PLAN</p>
+          <p>SELECT PLAN</p>
         </div>
       </div>
       <div>

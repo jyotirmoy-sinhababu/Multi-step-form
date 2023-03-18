@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import SideBar from '../../components/sidebar/SideBar';
-import MainPage from '../main/MainPage';
+import MainPage from '../container/Container';
+
+import './home.css';
+
 const Home = () => {
   // All states
   const [inputData, setInputData] = useState({
@@ -29,7 +32,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='home-cnt'>
       <SideBar count={count} />
       <MainPage
         setInputData={setInputData}
