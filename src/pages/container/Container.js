@@ -14,7 +14,7 @@ const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
     <div className='form-cnt'>
       <div>
         {' '}
-        <form>
+        <form className='form'>
           {count == 1 ? (
             <YourInfo setInputData={setInputData} inputData={inputData} />
           ) : count == 2 ? (

@@ -1,5 +1,41 @@
 .plan-cnt {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2.2rem;
+}
+
+.plan-btn-cnt {
+  display: flex;
+  gap: 30px;
+}
+
+.plan-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 150px;
+  border-radius: 5px;
+  gap: 2.2rem;
+}
+
+.plan-btn-img-cnt {
+  display: flex;
+  padding-left: 9px;
+  padding-top: 9px;
+}
+
+.plan-btn-para-cnt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 9px;
+}
+
+.plan-toggleBtn-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 35px;
+  box-shadow: 1px 1px 1px #888888;
+  border-radius: 7px;
 }

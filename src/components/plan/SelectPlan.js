@@ -29,10 +29,10 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
             handleClick(9);
           }}
         >
-          <div>
+          <div className='plan-btn-img-cnt'>
             <img src={arcade} alt='arcade' className='img' />
           </div>
-          <div>
+          <div className='plan-btn-para-cnt'>
             <p>Arcade</p>
             <p>$9/mo</p>
           </div>
@@ -44,10 +44,10 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
             handleClick(12);
           }}
         >
-          <div>
+          <div className='plan-btn-img-cnt'>
             <img src={advance} alt='advance' className='img' />
           </div>
-          <div>
+          <div className='plan-btn-para-cnt'>
             <p>Advanced</p>
             <p>$12/mo</p>
           </div>
@@ -59,16 +59,16 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
             handleClick(15);
           }}
         >
-          <div>
+          <div className='plan-btn-img-cnt'>
             <img src={pro} alt='pro' className='img' />
           </div>
-          <div>
+          <div className='plan-btn-para-cnt'>
             <p>Pro</p>
             <p>$15/mo</p>
           </div>
         </button>
       </div>
-      <div>
+      <div className='plan-toggleBtn-cnt'>
         <ToggleBtn setIsActive={setIsActive} isActive={isActive} />
       </div>
     </div>

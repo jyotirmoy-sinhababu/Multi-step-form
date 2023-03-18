@@ -4,6 +4,11 @@
   padding-top: 35px;
   padding-right: 55px;
   gap: 60px;
-  height: 550px;
+  height: 500px;
   width: 500px;
+}
+
+.form {
+  height: 400px;
+  width: 400px;
 }
