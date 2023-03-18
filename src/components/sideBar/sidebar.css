@@ -1,0 +1,14 @@
+.sidebar-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 100;
+  background: url('../../assets/sidebar.svg');
+}
+
+.sidebar-small-cnt {
+  display: flex;
+  gap: 19px;
+  z-index: 100;
+}

@@ -10,9 +10,15 @@ const YourInfo = ({ setInputData, inputData }) => {
   // console.log(inputData);
 
   return (
-    <div>
-      <h2>Personal info</h2>
-      <p>Please provide your name,email address and phone number</p>
+    <div className='info-cnt'>
+      <div>
+        {' '}
+        <h2>Personal info</h2>
+        <p className='info-note'>
+          Please provide your name,email address and phone number
+        </p>
+      </div>
+
       <div className='info-input-cnt'>
         <div className='input-cnt'>
           {' '}

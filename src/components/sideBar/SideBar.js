@@ -1,11 +1,14 @@
 import React from 'react';
 
-import SideImg from '../../assets/sidebar.svg';
+// import Banner from '../banner/Banner';
+
+import './sidebar.css';
 
 const SideBar = () => {
   return (
-    <div>
-      <div>
+    <div className='sidebar-cnt'>
+      {/* <Banner /> */}
+      <div className='sidebar-small-cnt'>
         <div>
           <p>1</p>
         </div>
@@ -14,7 +17,7 @@ const SideBar = () => {
           <p>YOUR INFO</p>
         </div>
       </div>
-      <div>
+      <div className='sidebar-small-cnt'>
         <div>
           <p>2</p>
         </div>
@@ -23,7 +26,7 @@ const SideBar = () => {
           <p>SELECT PLAN</p>
         </div>
       </div>
-      <div>
+      <div className='sidebar-small-cnt'>
         <div>
           <p>3</p>
         </div>
@@ -32,7 +35,7 @@ const SideBar = () => {
           <p>ADD-ONS</p>
         </div>
       </div>
-      <div>
+      <div className='sidebar-small-cnt'>
         <div>
           <p>4</p>
         </div>
