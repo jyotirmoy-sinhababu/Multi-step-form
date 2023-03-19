@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import YourInfo from '../../components/info/YourInfo';
 import SelectPlan from '../../components/plan/SelectPlan';
 import AddOn from '../../components/addOns/AddOn';
+import Summary from '../../components/summary/Summary';
 
 import './container.css';
 
@@ -26,6 +27,8 @@ const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
             />
           ) : count == 3 ? (
             <AddOn setInputData={setInputData} inputData={inputData} />
+          ) : count == 4 ? (
+            <Summary />
           ) : null}
         </form>
       </div>
