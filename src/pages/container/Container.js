@@ -30,12 +30,20 @@ const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
         </form>
       </div>
 
-      <div>
-        {count > 1 ? <button onClick={backBtn}>Go Back</button> : null}
-        {count == 4 ? (
-          <button>confirm</button>
+      <div className='cnt-btn'>
+        {count > 1 ? (
+          <button className='back-btn' onClick={backBtn}>
+            Go Back
+          </button>
         ) : (
-          <button onClick={nextBtn}>Next</button>
+          <div className='empty-div'>dont go back</div>
+        )}
+        {count == 4 ? (
+          <button className='confirm-btn'>confirm</button>
+        ) : (
+          <button className='nxt-btn' onClick={nextBtn}>
+            Next
+          </button>
         )}
       </div>
     </div>

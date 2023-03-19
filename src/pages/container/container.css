@@ -12,3 +12,27 @@
   height: 400px;
   width: 400px;
 }
+
+.cnt-btn {
+  display: flex;
+  gap: 18.6rem;
+  width: 450px;
+}
+
+.nxt-btn {
+  width: 120px;
+  height: 40px;
+  background-color: hsl(213, 96%, 18%);
+  color: aliceblue;
+  border-radius: 7px;
+}
+
+.back-btn {
+  width: 120px;
+  border: none;
+  background-color: white;
+}
+
+.empty-div {
+  color: white;
+}
