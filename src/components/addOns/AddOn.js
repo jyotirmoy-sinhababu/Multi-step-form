@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './addOn.css';
+
 const AddOn = ({ setInputData, inputData }) => {
   // monitor change
   const handleChange = (e) => {
@@ -9,9 +11,14 @@ const AddOn = ({ setInputData, inputData }) => {
   console.log(inputData);
 
   return (
-    <div>
-      <div>
+    <div className='addOn-cnt'>
+      <div className='addOn-headers'>
+        <h2>Pick add-ons</h2>
+        <p>Add-ons help enhance your gaming experience.</p>
+      </div>
+      <div className='addOn-input-cnt'>
         <input
+          className='addOn-inp'
           type='checkbox'
           value='1'
           name='monthlyService'
@@ -19,16 +26,19 @@ const AddOn = ({ setInputData, inputData }) => {
             handleChange(e);
           }}
         />
-        <div>
-          <label> Online Service</label>
-          <p>Access to multiplayer game</p>
-        </div>
-        <div>
-          <p>+$1/mo/</p>
+        <div className='addOn-dtls'>
+          <div>
+            <label> Online Service</label>
+            <p>Access to multiplayer game</p>
+          </div>
+          <div>
+            <p>+$1/mo</p>
+          </div>
         </div>
       </div>
-      <div>
+      <div className='addOn-input-cnt'>
         <input
+          className='addOn-inp'
           type='checkbox'
           value='2'
           name='monthlyStorage'
@@ -36,16 +46,19 @@ const AddOn = ({ setInputData, inputData }) => {
             handleChange(e);
           }}
         />
-        <div>
-          <label> Larger Storage</label>
-          <p>Extra 1TB of cloud storage </p>
-        </div>
-        <div>
-          <p>+$2/mo/</p>
+        <div className='addOn-dtls'>
+          <div>
+            <label> Larger Storage</label>
+            <p>Extra 1TB of cloud storage </p>
+          </div>
+          <div>
+            <p>+$2/mo</p>
+          </div>
         </div>
       </div>
-      <div>
+      <div className='addOn-input-cnt'>
         <input
+          className='addOn-inp'
           type='checkbox'
           value='2'
           name='monthlyProfile'
@@ -53,12 +66,14 @@ const AddOn = ({ setInputData, inputData }) => {
             handleChange(e);
           }}
         />
-        <div>
-          <label> Customizable Profile</label>
-          <p>Custom theme on your profile </p>
-        </div>
-        <div>
-          <p>+$2/mo/</p>
+        <div className='addOn-dtls'>
+          <div>
+            <label> Customizable Profile</label>
+            <p>Custom theme on your profile </p>
+          </div>
+          <div>
+            <p>+$2/mo</p>
+          </div>
         </div>
       </div>
     </div>

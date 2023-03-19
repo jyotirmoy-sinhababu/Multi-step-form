@@ -1,0 +1,23 @@
+.addOn-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.addOn-input-cnt {
+  display: flex;
+  gap: 25px;
+  border: solid 1px rgb(16, 15, 15);
+  width: 400px;
+  height: 80px;
+  padding-left: 13px;
+  border-radius: 5px;
+}
+
+.addOn-dtls {
+  display: flex;
+  align-items: center;
+  width: 320px;
+
+  justify-content: space-between;
+}
