@@ -29,3 +29,7 @@
   border: 1px solid white;
   border-radius: 50%;
 }
+
+.active {
+  background-color: hsl(206, 94%, 87%);
+}
