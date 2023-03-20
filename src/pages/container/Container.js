@@ -26,7 +26,11 @@ const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
               setIsActive={setIsActive}
             />
           ) : count == 3 ? (
-            <AddOn setInputData={setInputData} inputData={inputData} />
+            <AddOn
+              setInputData={setInputData}
+              inputData={inputData}
+              isActive={isActive}
+            />
           ) : count == 4 ? (
             <Summary />
           ) : null}

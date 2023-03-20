@@ -14,6 +14,9 @@ const Home = () => {
     monthlyService: '',
     monthlyStorage: '',
     monthlyProfile: '',
+    yrService: '',
+    yrStorage: '',
+    yrProfile: '',
   });
 
   const [count, setCount] = useState(1);
