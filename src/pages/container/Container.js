@@ -10,7 +10,6 @@ import './container.css';
 const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
   const [isActive, setIsActive] = useState(true);
 
-  console.log(count);
   return (
     <div className='form-cnt'>
       <div>
@@ -32,7 +31,7 @@ const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
               isActive={isActive}
             />
           ) : count == 4 ? (
-            <Summary />
+            <Summary inputData={inputData} isActive={isActive} />
           ) : null}
         </form>
       </div>

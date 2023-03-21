@@ -13,9 +13,9 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
   const handleClick = (amount) => {
     if (isActive) {
       setInputData({ ...inputData, monthlyPlan: amount });
+      console.log('done');
     } else setInputData({ ...inputData, yearlyPlan: amount });
   };
-  console.log(inputData);
   return (
     <div className='plan-cnt'>
       <div className='plan-small-cnt'>

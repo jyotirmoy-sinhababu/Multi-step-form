@@ -7,9 +7,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
-
   console.log(inputData);
-
   return (
     <div className='addOn-cnt'>
       <div className='addOn-headers'>

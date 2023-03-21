@@ -5,7 +5,6 @@ const ToggleBtn = ({ isActive, setIsActive }) => {
   const handleChange = () => {
     setIsActive(!isActive);
   };
-  console.log(isActive);
   return (
     <div className='t-s-cntnr'>
       <input

@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Summary = () => {
+const Summary = ({ inputData, isActive }) => {
+  console.log(inputData);
   return (
     <div>
       <div>
@@ -11,11 +12,10 @@ const Summary = () => {
         <div>
           <div>
             <p>Arcade</p>
-            <p></p>
+
+            <p>(monthly)</p>
           </div>
-          <div>
-            <p>$9/mo</p>
-          </div>
+          <div>{inputData ? <p>{}</p> : null}</div>
         </div>
         <div>
           <p>Online service</p>
