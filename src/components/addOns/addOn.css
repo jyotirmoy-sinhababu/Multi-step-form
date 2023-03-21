@@ -4,6 +4,12 @@
   gap: 45px;
 }
 
+.addOn-input-main-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
 .addOn-input-cnt {
   display: flex;
   gap: 25px;

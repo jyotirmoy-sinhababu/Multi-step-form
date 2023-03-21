@@ -15,7 +15,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
         <p>Add-ons help enhance your gaming experience.</p>
       </div>
       {isActive ? (
-        <div>
+        <div className='addOn-input-main-cnt'>
           {' '}
           <div className='addOn-input-cnt'>
             <input

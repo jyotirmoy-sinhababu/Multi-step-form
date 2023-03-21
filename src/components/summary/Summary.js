@@ -1,13 +1,15 @@
 import React from 'react';
 
 const Summary = ({ inputData, isActive }) => {
-  console.log(inputData);
+  console.log(inputData.monthlyPlan);
   return (
     <div>
       <div>
         <h2>Finishing up</h2>
         <p>Double-check everything looks OK before confirming</p>
       </div>
+      <div></div>
+
       <div>
         <div>
           <div>
@@ -15,21 +17,30 @@ const Summary = ({ inputData, isActive }) => {
 
             <p>(monthly)</p>
           </div>
-          <div>{inputData ? <p>{}</p> : null}</div>
+          <div>{inputData ? <p>{inputData.monthlyPlan}</p> : null}</div>
         </div>
         <div>
           <p>Online service</p>
-          <p>+$1/mo</p>
+          {inputData ? <p>{inputData.monthlyService}</p> : null}
         </div>
         <div>
           <p>Larger Storage</p>
-          <p>+$2/mo</p>
+          {inputData ? <p>{inputData.monthlyStorage}</p> : null}
         </div>
       </div>
       <div>
         <div>
           <p>Total </p>
-          <p></p>
+          {inputData ? (
+            <p>
+              $
+              {+inputData.monthlyPlan +
+                +inputData.monthlyService +
+                +inputData.monthlyStorage}
+            </p>
+          ) : (
+            <p>0</p>
+          )}
         </div>
         <div>
           <p></p>
