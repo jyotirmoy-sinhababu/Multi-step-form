@@ -33,10 +33,34 @@ const Home = () => {
     }
   };
 
+  const {
+    email,
+    name,
+    number,
+    monthlyPlan,
+    yearlyPlan,
+    monthlyService,
+    monthlyStorage,
+    monthlyProfile,
+    yrService,
+    yrStorage,
+    yrProfile,
+  } = inputData;
+
+  //control form submission
+
+  const handleSubmit = (e) => {
+    if (inputData && count == 4) {
+      e.preventDefault();
+      localStorage.setItem('inputData', JSON.stringify(inputData));
+    }
+  };
+
   return (
     <div className='home-cnt'>
       <SideBar count={count} />
       <Container
+        handleSubmit={handleSubmit}
         setInputData={setInputData}
         inputData={inputData}
         nextBtn={nextBtn}

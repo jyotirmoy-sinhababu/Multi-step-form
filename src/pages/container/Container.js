@@ -7,14 +7,27 @@ import Summary from '../../components/summary/Summary';
 
 import './container.css';
 
-const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
+const MainPage = ({
+  count,
+  backBtn,
+  nextBtn,
+  setInputData,
+  inputData,
+  handleSubmit,
+}) => {
   const [isActive, setIsActive] = useState(true);
 
   return (
     <div className='form-cnt'>
       <div>
         {' '}
-        <form className='form'>
+        <form
+          className='form'
+          id='formId'
+          onSubmit={(e) => {
+            handleSubmit();
+          }}
+        >
           {count == 1 ? (
             <YourInfo setInputData={setInputData} inputData={inputData} />
           ) : count == 2 ? (
@@ -45,7 +58,9 @@ const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
           <div className='empty-div'>dont go back</div>
         )}
         {count == 4 ? (
-          <button className='confirm-btn'>confirm</button>
+          <button className='confirm-btn' type='submit' form='formId'>
+            confirm
+          </button>
         ) : (
           <button className='nxt-btn' onClick={nextBtn}>
             Next
