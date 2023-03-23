@@ -14,56 +14,58 @@ const MainPage = ({
   setInputData,
   inputData,
   handleSubmit,
+  isForm,
 }) => {
   const [isActive, setIsActive] = useState(true);
 
   return (
     <div className='form-cnt'>
       <div>
-        {' '}
-        <form
-          className='form'
-          id='formId'
-          onSubmit={(e) => {
-            handleSubmit();
-          }}
-        >
-          {count == 1 ? (
-            <YourInfo setInputData={setInputData} inputData={inputData} />
-          ) : count == 2 ? (
-            <SelectPlan
-              setInputData={setInputData}
-              inputData={inputData}
-              isActive={isActive}
-              setIsActive={setIsActive}
-            />
-          ) : count == 3 ? (
-            <AddOn
-              setInputData={setInputData}
-              inputData={inputData}
-              isActive={isActive}
-            />
-          ) : count == 4 ? (
-            <Summary inputData={inputData} isActive={isActive} />
-          ) : null}
-        </form>
+        {isForm ? (
+          <form
+            className='form'
+            id='formId'
+            onSubmit={(e) => {
+              handleSubmit(e);
+            }}
+          >
+            {count == 0 ? (
+              <YourInfo setInputData={setInputData} inputData={inputData} />
+            ) : count == 1 ? (
+              <SelectPlan
+                setInputData={setInputData}
+                inputData={inputData}
+                isActive={isActive}
+                setIsActive={setIsActive}
+              />
+            ) : count == 2 ? (
+              <AddOn
+                setInputData={setInputData}
+                inputData={inputData}
+                isActive={isActive}
+              />
+            ) : null}
+          </form>
+        ) : (
+          <Summary inputData={inputData} isActive={isActive} />
+        )}
       </div>
 
       <div className='cnt-btn'>
-        {count > 1 ? (
+        {count > 0 ? (
           <button className='back-btn' onClick={backBtn}>
             Go Back
           </button>
         ) : (
-          <div className='empty-div'>dont go back</div>
+          <div className='empty-div'>don't go back</div>
         )}
-        {count == 4 ? (
-          <button className='confirm-btn' type='submit' form='formId'>
-            confirm
+        {count != 3 ? (
+          <button type='button' className='nxt-btn' onClick={nextBtn}>
+            Next
           </button>
         ) : (
-          <button className='nxt-btn' onClick={nextBtn}>
-            Next
+          <button type='submit' form='formId' className='confirm-btn'>
+            confirm
           </button>
         )}
       </div>

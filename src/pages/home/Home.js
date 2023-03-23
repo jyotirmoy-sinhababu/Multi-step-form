@@ -19,40 +19,35 @@ const Home = () => {
     yrProfile: '',
   });
 
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
+  const [isForm, setIsForm] = useState(true);
+  console.log(count);
 
   // control form navigation
 
   const nextBtn = () => {
     if (count < 4) setCount((prev) => prev + 1);
+    if (count == 4) {
+      setIsForm(false);
+    }
+
+    console.log('not ok');
   };
 
   const backBtn = () => {
-    if (count > 1) {
+    if (count > 0) {
       setCount((prev) => prev - 1);
     }
   };
 
-  const {
-    email,
-    name,
-    number,
-    monthlyPlan,
-    yearlyPlan,
-    monthlyService,
-    monthlyStorage,
-    monthlyProfile,
-    yrService,
-    yrStorage,
-    yrProfile,
-  } = inputData;
-
   //control form submission
 
   const handleSubmit = (e) => {
-    if (inputData && count == 4) {
-      e.preventDefault();
+    e.preventDefault();
+
+    if (inputData) {
       localStorage.setItem('inputData', JSON.stringify(inputData));
+      console.log('ok');
     }
   };
 
@@ -66,6 +61,7 @@ const Home = () => {
         nextBtn={nextBtn}
         backBtn={backBtn}
         count={count}
+        isForm={isForm}
       />
     </div>
   );
