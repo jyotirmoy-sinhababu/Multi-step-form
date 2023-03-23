@@ -36,3 +36,11 @@
 .empty-div {
   color: white;
 }
+
+.confirm-btn {
+  width: 120px;
+  height: 40px;
+  background-color: hsl(243, 100%, 62%);
+  border: none;
+  border-radius: 7px;
+}
