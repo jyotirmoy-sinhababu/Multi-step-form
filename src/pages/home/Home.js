@@ -20,16 +20,12 @@ const Home = () => {
   });
 
   const [count, setCount] = useState(0);
-  const [isForm, setIsForm] = useState(true);
   console.log(count);
 
   // control form navigation
 
   const nextBtn = () => {
-    if (count < 4) setCount((prev) => prev + 1);
-    if (count == 4) {
-      setIsForm(false);
-    }
+    if (count < 3) setCount((prev) => prev + 1);
 
     console.log('not ok');
   };
@@ -61,7 +57,6 @@ const Home = () => {
         nextBtn={nextBtn}
         backBtn={backBtn}
         count={count}
-        isForm={isForm}
       />
     </div>
   );

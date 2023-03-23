@@ -14,41 +14,32 @@ const MainPage = ({
   setInputData,
   inputData,
   handleSubmit,
-  isForm,
 }) => {
   const [isActive, setIsActive] = useState(true);
 
   return (
     <div className='form-cnt'>
       <div>
-        {isForm ? (
-          <form
-            className='form'
-            id='formId'
-            onSubmit={(e) => {
-              handleSubmit(e);
-            }}
-          >
-            {count == 0 ? (
-              <YourInfo setInputData={setInputData} inputData={inputData} />
-            ) : count == 1 ? (
-              <SelectPlan
-                setInputData={setInputData}
-                inputData={inputData}
-                isActive={isActive}
-                setIsActive={setIsActive}
-              />
-            ) : count == 2 ? (
-              <AddOn
-                setInputData={setInputData}
-                inputData={inputData}
-                isActive={isActive}
-              />
-            ) : null}
-          </form>
-        ) : (
-          <Summary inputData={inputData} isActive={isActive} />
-        )}
+        <form className='form' id='formId'>
+          {count == 0 ? (
+            <YourInfo setInputData={setInputData} inputData={inputData} />
+          ) : count == 1 ? (
+            <SelectPlan
+              setInputData={setInputData}
+              inputData={inputData}
+              isActive={isActive}
+              setIsActive={setIsActive}
+            />
+          ) : count == 2 ? (
+            <AddOn
+              setInputData={setInputData}
+              inputData={inputData}
+              isActive={isActive}
+            />
+          ) : (
+            <Summary inputData={inputData} isActive={isActive} />
+          )}
+        </form>
       </div>
 
       <div className='cnt-btn'>
@@ -64,7 +55,13 @@ const MainPage = ({
             Next
           </button>
         ) : (
-          <button type='submit' form='formId' className='confirm-btn'>
+          <button
+            onClick={(e) => {
+              handleSubmit(e);
+            }}
+            type='submit'
+            className='confirm-btn'
+          >
             confirm
           </button>
         )}
