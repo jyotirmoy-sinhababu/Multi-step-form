@@ -36,22 +36,11 @@ const Home = () => {
     }
   };
 
-  //control form submission
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (inputData) {
-      localStorage.setItem('inputData', JSON.stringify(inputData));
-      console.log('ok');
-    }
-  };
 
   return (
     <div className='home-cnt'>
       <SideBar count={count} />
       <Container
-        handleSubmit={handleSubmit}
         setInputData={setInputData}
         inputData={inputData}
         nextBtn={nextBtn}

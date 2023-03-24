@@ -44,3 +44,8 @@
   border: none;
   border-radius: 7px;
 }
+
+.backBtn-on,
+.formBtnOn {
+  display: none;
+}

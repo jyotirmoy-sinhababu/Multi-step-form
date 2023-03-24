@@ -1,0 +1,20 @@
+.message-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+  padding-top: 95px;
+}
+
+.message-txt-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message-content {
+  text-align: center;
+}
