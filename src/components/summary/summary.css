@@ -5,14 +5,60 @@
 }
 
 .summary-data-cnt {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(229, 51%, 92%);
   width: 450px;
   border-radius: 7px;
   height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.summary-arcade-cnt {
+  display: flex;
+  height: 100px;
+  width: 400px;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.summary-arcade-txt-cnt {
+  display: flex;
+  gap: 2px;
 }
 
 .storage-service-cnt {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  border-top: 1px solid black;
+  height: 100px;
+  width: 400px;
+}
+
+.storage-service-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.online-service-cnt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.storage-cnt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-total-cnt {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.summary-total-data-cnt {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
 }

@@ -23,8 +23,10 @@ const Summary = ({ inputData, isActive }) => {
               </div>
               <div className='arcade-data-cnt'>
                 {inputData ? (
-                  <p className='arcade-data'>{inputData.monthlyPlan}</p>
-                ) : null}
+                  <p className='arcade-data'>${inputData.monthlyPlan}/mo</p>
+                ) : (
+                  <p>0</p>
+                )}
               </div>
             </div>
             <div className='storage-service-cnt'>
@@ -33,15 +35,22 @@ const Summary = ({ inputData, isActive }) => {
                 <p className='online-service-txt'>Online service</p>
                 {inputData ? (
                   <p className='online-service-data'>
-                    {inputData.monthlyService}
+                    ${inputData.monthlyService}/mo
                   </p>
-                ) : null}
+                ) : (
+                  <p>0</p>
+                )}
               </div>
               <div className='storage-cnt'>
                 <p className='storage-txt'>Larger Storage</p>
                 {inputData ? (
-                  <p className='storage-data'> {inputData.monthlyStorage}</p>
-                ) : null}
+                  <p className='storage-data'>
+                    {' '}
+                    ${inputData.monthlyStorage}/mo
+                  </p>
+                ) : (
+                  <p>0</p>
+                )}
               </div>
             </div>
           </div>
@@ -86,7 +95,6 @@ const Summary = ({ inputData, isActive }) => {
               <p>Total </p>
               {inputData ? (
                 <p>
-                  $
                   {+inputData.yearlyPlan +
                     +inputData.yrService +
                     +inputData.yrStorage}
