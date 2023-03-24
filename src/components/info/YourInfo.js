@@ -13,9 +13,9 @@ const YourInfo = ({ setInputData, inputData }) => {
     <div className='info-cnt'>
       <div>
         {' '}
-        <h2>Personal info</h2>
+        <h2 className='info-cnt-header'>Personal info</h2>
         <p className='info-note'>
-          Please provide your name,email address and phone number
+          Please provide your name,email address and phone number.
         </p>
       </div>
 

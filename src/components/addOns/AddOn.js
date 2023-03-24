@@ -9,9 +9,11 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
   };
   return (
     <div className='addOn-cnt'>
-      <div className='addOn-headers'>
-        <h2>Pick add-ons</h2>
-        <p>Add-ons help enhance your gaming experience.</p>
+      <div className='addOn-head-cnt'>
+        <h2 className='addOn-header-txt'>Pick add-ons</h2>
+        <p className='addOn-para-txt'>
+          Add-ons help enhance your gaming experience.
+        </p>
       </div>
       {isActive ? (
         <div className='addOn-input-main-cnt'>
@@ -28,8 +30,8 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
             />
             <div className='addOn-dtls'>
               <div>
-                <label> Online Service</label>
-                <p>Access to multiplayer game</p>
+                <label className='addOn-label'> Online Service</label>
+                <p className='input-infrm-txt'>Access to multiplayer game</p>
               </div>
               <div>
                 <p>+$1/mo</p>
@@ -48,8 +50,8 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
             />
             <div className='addOn-dtls'>
               <div>
-                <label> Larger Storage</label>
-                <p>Extra 1TB of cloud storage </p>
+                <label className='addOn-label'> Larger Storage</label>
+                <p className='input-infrm-txt'>Extra 1TB of cloud storage </p>
               </div>
               <div>
                 <p>+$2/mo</p>
@@ -68,8 +70,8 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
             />
             <div className='addOn-dtls'>
               <div>
-                <label> Customizable Profile</label>
-                <p>Custom theme on your profile </p>
+                <label className='addOn-label'> Customizable Profile</label>
+                <p className='input-infrm-txt'>Custom theme on your profile </p>
               </div>
               <div>
                 <p>+$2/mo</p>
@@ -78,7 +80,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
           </div>
         </div>
       ) : (
-        <div>
+        <div className='addOn-input-main-cnt'>
           <div className='addOn-input-cnt'>
             <input
               className='addOn-inp'
@@ -91,8 +93,8 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
             />
             <div className='addOn-dtls'>
               <div>
-                <label> Online Service</label>
-                <p>Access to multiplayer game</p>
+                <label className='addOn-label'> Online Service</label>
+                <p className='input-infrm-txt'>Access to multiplayer game</p>
               </div>
               <div>
                 <p>+$10/yr</p>
@@ -111,8 +113,8 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
             />
             <div className='addOn-dtls'>
               <div>
-                <label> Larger Storage</label>
-                <p>Extra 1TB of cloud storage </p>
+                <label className='addOn-label'> Larger Storage</label>
+                <p className='input-infrm-txt'>Extra 1TB of cloud storage </p>
               </div>
               <div>
                 <p>+$20/yr</p>
@@ -131,8 +133,8 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
             />
             <div className='addOn-dtls'>
               <div>
-                <label> Customizable Profile</label>
-                <p>Custom theme on your profile </p>
+                <label className='addOn-label'> Customizable Profile</label>
+                <p className='input-infrm-txt'>Custom theme on your profile </p>
               </div>
               <div>
                 <p>+$20/yr</p>

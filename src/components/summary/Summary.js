@@ -56,13 +56,14 @@ const Summary = ({ inputData, isActive }) => {
           </div>
           <div className='summary-total-cnt'>
             <div className='summary-total-data-cnt'>
-              <p className='total-txt'>Total </p>
+              <p className='total-txt'>Total (per month)</p>
               {inputData ? (
                 <p className='total-data'>
-                  $
+                  + $
                   {+inputData.monthlyPlan +
                     +inputData.monthlyService +
                     +inputData.monthlyStorage}
+                  /mo
                 </p>
               ) : (
                 <p>0</p>
@@ -72,9 +73,9 @@ const Summary = ({ inputData, isActive }) => {
         </div>
       ) : (
         <div>
-          <div>
-            <div>
-              <div>
+          <div className='summary-data-cnt'>
+            <div className='summary-arcade-cnt'>
+              <div className='summary-arcade-txt-cnt'>
                 <p>Arcade</p>
 
                 <p>(yearly)</p>

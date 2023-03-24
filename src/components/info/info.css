@@ -18,8 +18,23 @@
 }
 
 .input-box {
-  width: 420px;
+  width: 400px;
   height: 37px;
   border-radius: 5px;
   padding-left: 9px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  color: hsl(213, 96%, 18%);
+}
+
+.info-cnt-header,
+.info-note {
+  font-family: 'Oswald', sans-serif;
+  color: hsl(213, 96%, 18%);
+}
+
+.info-note {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
 }

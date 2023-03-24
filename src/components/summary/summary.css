@@ -62,3 +62,46 @@
   width: 400px;
   justify-content: space-between;
 }
+
+.summary-header,
+.summary-para {
+  font-family: 'Oswald', sans-serif;
+  color: hsl(213, 96%, 18%);
+}
+
+.summary-para {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.arcade-txt,
+.arcade-monthly,
+.arcade-data {
+  font-family: 'Oswald', sans-serif;
+  color: hsl(213, 96%, 18%);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.online-service-txt,
+.storage-txt,
+.total-txt {
+  font-family: 'Oswald', sans-serif;
+  color: hsl(213, 96%, 18%);
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.online-service-data,
+.storage-data {
+  color: hsl(213, 96%, 18%);
+  font-size: 14px;
+}
+
+.total-data {
+  color: hsl(243, 100%, 62%);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+}

@@ -30,6 +30,6 @@
   border-radius: 50%;
 }
 
-.active {
+.on {
   background-color: hsl(206, 94%, 87%);
 }

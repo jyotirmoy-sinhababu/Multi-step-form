@@ -26,3 +26,26 @@
   width: 320px;
   justify-content: space-between;
 }
+
+.addOn-header-txt,
+.addOn-para-txt {
+  font-family: 'Oswald', sans-serif;
+  color: hsl(213, 96%, 18%);
+}
+
+.addOn-para-txt {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.addOn-label {
+  font-family: 'Oswald', sans-serif;
+  color: hsl(213, 96%, 18%);
+}
+
+.input-infrm-txt {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+}

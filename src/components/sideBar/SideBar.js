@@ -9,9 +9,7 @@ const SideBar = ({ count }) => {
     <div className='sidebar-cnt'>
       {/* <Banner /> */}
       <div className='sidebar-small-cnt'>
-        <div
-          className={`sidebar-num-cnt ${count == 0 ? 'active' : 'inactive'}`}
-        >
+        <div className={`sidebar-num-cnt ${count == 0 ? 'on' : 'off'}`}>
           <p>1</p>
         </div>
         <div>
@@ -20,9 +18,7 @@ const SideBar = ({ count }) => {
         </div>
       </div>
       <div className='sidebar-small-cnt'>
-        <div
-          className={`sidebar-num-cnt ${count == 1 ? 'active' : 'inactive'}`}
-        >
+        <div className={`sidebar-num-cnt ${count == 1 ? 'on' : 'off'}`}>
           <p>2</p>
         </div>
         <div>
@@ -31,9 +27,7 @@ const SideBar = ({ count }) => {
         </div>
       </div>
       <div className='sidebar-small-cnt'>
-        <div
-          className={`sidebar-num-cnt ${count == 2 ? 'active' : 'inactive'}`}
-        >
+        <div className={`sidebar-num-cnt ${count == 2 ? 'on' : 'off'}`}>
           <p>3</p>
         </div>
         <div>
@@ -42,9 +36,7 @@ const SideBar = ({ count }) => {
         </div>
       </div>
       <div className='sidebar-small-cnt'>
-        <div
-          className={`sidebar-num-cnt ${count == 3 ? 'active' : 'inactive'}`}
-        >
+        <div className={`sidebar-num-cnt ${count == 3 ? 'on' : 'off'}`}>
           <p>4</p>
         </div>
         <div>
