@@ -76,29 +76,44 @@ const Summary = ({ inputData, isActive }) => {
           <div className='summary-data-cnt'>
             <div className='summary-arcade-cnt'>
               <div className='summary-arcade-txt-cnt'>
-                <p>Arcade</p>
+                <p className='arcade-txt'>Arcade</p>
 
-                <p>(yearly)</p>
+                <p className='arcade-yr'>(yearly)</p>
               </div>
-              <div>{inputData ? <p>{inputData.yearlyPlan}</p> : null}</div>
+              <div className='arcade-data-cnt'>
+                {inputData ? (
+                  <p className='arcade-data'>{inputData.yearlyPlan}</p>
+                ) : null}
+              </div>
             </div>
-            <div>
-              <p>Online service</p>
-              {inputData ? <p>{inputData.yrService}</p> : null}
-            </div>
-            <div>
-              <p>Larger Storage</p>
-              {inputData ? <p>{inputData.yrStorage}</p> : null}
+            <div className='storage-service-cnt'>
+              {' '}
+              <div className='online-service-cnt'>
+                <p className='online-service-txt'>Online service</p>
+                {inputData ? (
+                  <p className='online-service-data'>
+                    ${inputData.yrService}/yr
+                  </p>
+                ) : null}
+              </div>
+              <div className='storage-cnt'>
+                <p className='storage-txt'>Larger Storage</p>
+                {inputData ? (
+                  <p className='storage-data'>${inputData.yrStorage}/yr</p>
+                ) : null}
+              </div>
             </div>
           </div>
-          <div>
-            <div>
-              <p>Total </p>
+          <div className='summary-total-cnt'>
+            <div className='summary-total-data-cnt'>
+              <p className='total-txt'>Total </p>
               {inputData ? (
-                <p>
+                <p className='total-data'>
+                  +$
                   {+inputData.yearlyPlan +
                     +inputData.yrService +
                     +inputData.yrStorage}
+                  /yr
                 </p>
               ) : (
                 <p>0</p>
