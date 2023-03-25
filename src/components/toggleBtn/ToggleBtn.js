@@ -6,19 +6,15 @@ const ToggleBtn = ({ isActive, setIsActive }) => {
     setIsActive(!isActive);
   };
   return (
-    <div className='t-s-cntnr'>
-      <input
-        onChange={handleChange}
-        className='toggle-checkbox'
-        type='checkbox'
-      />
-      <label
-        className={`toggle-label ${isActive ? 'active' : 'inactive'}`}
-        htmlFor='toggle-checkbox'
-      >
-        <span
-          className={`switch ${isActive ? 'switch-on' : 'switch-off'}`}
-        ></span>
+    <div>
+      <label className='switch'>
+        <input
+          type='checkbox'
+          onChange={() => {
+            handleChange();
+          }}
+        />
+        <span className='slider round'></span>
       </label>
     </div>
   );

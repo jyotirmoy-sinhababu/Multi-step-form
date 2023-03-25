@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import YourInfo from '../../components/info/YourInfo';
 import SelectPlan from '../../components/plan/SelectPlan';
@@ -8,22 +8,56 @@ import Message from '../../components/message/Message';
 
 import './container.css';
 
-const MainPage = ({ count, backBtn, nextBtn, setInputData, inputData }) => {
-  const [isActive, setIsActive] = useState(true);
-
+const MainPage = ({
+  count,
+  backBtn,
+  nextBtn,
+  setInputData,
+  inputData,
+  setIsActive,
+  isActive,
+  // data,
+  // setData,
+}) => {
   const [isForm, setIsForm] = useState(true);
+
+  const {
+    email,
+    name,
+    number,
+    monthlyPlan,
+    yearlyPlan,
+    monthlyService,
+    monthlyStorage,
+    monthlyProfile,
+    yrService,
+    yrStorage,
+    yrProfile,
+  } = inputData;
 
   //control form submission
 
+  // useEffect(() => {
+  //   if (inputData) {
+  //     setData([...data, inputData]);
+  //   }
+  // }, [inputData]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setIsForm(false);
     if (inputData) {
-      localStorage.setItem('inputData', JSON.stringify(inputData));
-      console.log('ok');
+      let newData = [];
+      if (localStorage.getItem('data')) {
+        newData = [...JSON.parse(localStorage.getItem('data')), inputData];
+      } else {
+        newData = [inputData];
+      }
+      localStorage.setItem('data', JSON.stringify(newData));
     }
   };
+
+  // console.log(data);
 
   return (
     <div className='form-cnt'>

@@ -19,8 +19,11 @@ const Home = () => {
     yrProfile: '',
   });
 
+  const [data, setData] = useState([]);
+
   const [count, setCount] = useState(0);
-  console.log(count);
+
+  const [isActive, setIsActive] = useState(true);
 
   // control form navigation
 
@@ -36,7 +39,6 @@ const Home = () => {
     }
   };
 
-
   return (
     <div className='home-cnt'>
       <SideBar count={count} />
@@ -46,6 +48,10 @@ const Home = () => {
         nextBtn={nextBtn}
         backBtn={backBtn}
         count={count}
+        isActive={isActive}
+        setIsActive={setIsActive}
+        // data={data}
+        // setData={setData}
       />
     </div>
   );
