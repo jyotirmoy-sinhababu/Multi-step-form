@@ -124,7 +124,13 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
       )}
 
       <div className='plan-toggleBtn-cnt'>
+        <p className={`toggle-txt ${isActive ? 'toggle-on' : 'toggle-off'}`}>
+          monthly
+        </p>
         <ToggleBtn setIsActive={setIsActive} isActive={isActive} />
+        <p className={`toggle-txt ${!isActive ? 'toggle-on' : 'toggle-off'}`}>
+          yearly
+        </p>
       </div>
     </div>
   );

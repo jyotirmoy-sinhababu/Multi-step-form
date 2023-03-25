@@ -9,6 +9,7 @@ const ToggleBtn = ({ isActive, setIsActive }) => {
     <div>
       <label className='switch'>
         <input
+          checked={!isActive}
           type='checkbox'
           onChange={() => {
             handleChange();

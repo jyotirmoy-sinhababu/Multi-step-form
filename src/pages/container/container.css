@@ -25,12 +25,21 @@
   background-color: hsl(213, 96%, 18%);
   color: aliceblue;
   border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.empty-div {
+  width: 120px;
+  height: 40px;
 }
 
 .back-btn {
   width: 120px;
   border: none;
   background-color: white;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
 }
 
 .empty-div {
@@ -41,8 +50,12 @@
   width: 120px;
   height: 40px;
   background-color: hsl(243, 100%, 62%);
+  color: aliceblue;
+  font-size: 15px;
   border: none;
   border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
 }
 
 .backBtn-on,
