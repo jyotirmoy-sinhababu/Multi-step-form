@@ -3,7 +3,21 @@
   gap: 60px;
   border-radius: 9px;
   height: 550px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   padding: 12px;
   box-shadow: 5px 10px 18px #888888;
+}
+
+@media screen and (max-width: 650px) {
+  .home-cnt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 9px;
+    height: 750px;
+    width: 453px;
+    padding: 12px;
+    box-shadow: 5px 10px 18px #888888;
+  }
 }

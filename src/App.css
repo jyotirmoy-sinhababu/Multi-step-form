@@ -9,3 +9,10 @@
   align-items: center;
   padding-top: 100px;
 }
+
+/* @media screen and (max-width: 650px) {
+  .App {
+    display: flex;
+    padding-left: 110px;
+  }
+} */
