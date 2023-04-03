@@ -44,10 +44,12 @@
     padding-top: 42px;
     gap: 12px;
     position: relative;
-    z-index: 100;
     background: url('../../assets/sidebar.svg');
-    height: 700px;
-    width: 370px;
+    background-size: cover;
+    background-position: right bottom;
+    height: 900px;
+    width: 435px;
+    max-width: 100%;
     border-radius: 7px;
   }
 
