@@ -6,7 +6,6 @@
   padding-top: 42px;
   gap: 12px;
   position: relative;
-  z-index: 100;
   background: url('../../assets/sidebar.svg');
   height: 500px;
   max-width: 270px;
@@ -38,28 +37,25 @@
 @media screen and (max-width: 650px) {
   .sidebar-cnt {
     display: flex;
-    flex-direction: row;
     background-repeat: no-repeat;
     padding-left: 19px;
     padding-top: 42px;
     gap: 12px;
     position: relative;
-    background: url('../../assets/sidebar.svg');
-    background-size: cover;
-    background-position: right bottom;
-    height: 900px;
-    width: 435px;
-    max-width: 100%;
+    background: url('../../assets/sidebarmobile.svg');
+    height: 600px;
+    max-width: 470px;
+    width: 100%;
     border-radius: 7px;
   }
 
   .sidebar-para-cnt {
     display: none;
   }
+
   .sidebar-small-cnt {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     gap: 19px;
-    z-index: 100;
   }
 }

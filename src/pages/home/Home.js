@@ -40,19 +40,21 @@ const Home = () => {
   };
 
   return (
-    <div className='home-cnt'>
-      <SideBar count={count} />
-      <Container
-        setInputData={setInputData}
-        inputData={inputData}
-        nextBtn={nextBtn}
-        backBtn={backBtn}
-        count={count}
-        isActive={isActive}
-        setIsActive={setIsActive}
-        // data={data}
-        // setData={setData}
-      />
+    <div className='main-home-cnt'>
+      <div className='home-cnt'>
+        <SideBar count={count} />
+        <Container
+          setInputData={setInputData}
+          inputData={inputData}
+          nextBtn={nextBtn}
+          backBtn={backBtn}
+          count={count}
+          isActive={isActive}
+          setIsActive={setIsActive}
+          // data={data}
+          // setData={setData}
+        />
+      </div>
     </div>
   );
 };
