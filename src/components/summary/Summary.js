@@ -30,10 +30,10 @@ const Summary = ({ inputData, isActive }) => {
                 <p className='arcade-monthly'>(monthly)</p>
               </div>
               <div className='arcade-data-cnt'>
-                {inputData ? (
-                  <p className='arcade-data'>${inputData.monthlyPlan}/mo</p>
+                {inputData.monthlyPlan ? (
+                  <p className='arcade-data'>${inputData.monthlyPlan}/mo </p>
                 ) : (
-                  <p>0</p>
+                  <p>_____</p>
                 )}
               </div>
             </div>
@@ -41,23 +41,20 @@ const Summary = ({ inputData, isActive }) => {
               {' '}
               <div className='online-service-cnt'>
                 <p className='online-service-txt'>Online service</p>
-                {inputData ? (
+                {inputData.monthlyService ? (
                   <p className='online-service-data'>
                     ${inputData.monthlyService}/mo
                   </p>
                 ) : (
-                  <p>0</p>
+                  <p>_____</p>
                 )}
               </div>
               <div className='storage-cnt'>
                 <p className='storage-txt'>Larger Storage</p>
-                {inputData ? (
-                  <p className='storage-data'>
-                    {' '}
-                    ${inputData.monthlyStorage}/mo
-                  </p>
+                {inputData.monthlyPlan ? (
+                  <p className='storage-data'> ${inputData.monthlyPlan}/mo</p>
                 ) : (
-                  <p>0</p>
+                  <p>_____</p>
                 )}
               </div>
             </div>
@@ -74,7 +71,7 @@ const Summary = ({ inputData, isActive }) => {
                   /mo
                 </p>
               ) : (
-                <p>0</p>
+                <p>_____</p>
               )}
             </div>
           </div>
@@ -89,26 +86,32 @@ const Summary = ({ inputData, isActive }) => {
                 <p className='arcade-yr'>(yearly)</p>
               </div>
               <div className='arcade-data-cnt'>
-                {inputData ? (
+                {inputData.yearlyPlan ? (
                   <p className='arcade-data'>{inputData.yearlyPlan}</p>
-                ) : null}
+                ) : (
+                  <p>_____</p>
+                )}
               </div>
             </div>
             <div className='storage-service-cnt'>
               {' '}
               <div className='online-service-cnt'>
                 <p className='online-service-txt'>Online service</p>
-                {inputData ? (
+                {inputData.yrService ? (
                   <p className='online-service-data'>
                     ${inputData.yrService}/yr
                   </p>
-                ) : null}
+                ) : (
+                  <p>_____</p>
+                )}
               </div>
               <div className='storage-cnt'>
                 <p className='storage-txt'>Larger Storage</p>
-                {inputData ? (
+                {inputData.yrStorage ? (
                   <p className='storage-data'>${inputData.yrStorage}/yr</p>
-                ) : null}
+                ) : (
+                  <p>_____</p>
+                )}
               </div>
             </div>
           </div>
@@ -124,7 +127,7 @@ const Summary = ({ inputData, isActive }) => {
                   /yr
                 </p>
               ) : (
-                <p>0</p>
+                <p>_____</p>
               )}
             </div>
             <div>

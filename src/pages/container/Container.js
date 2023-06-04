@@ -11,7 +11,19 @@ import Message from '../../components/message/Message';
 import './container.css';
 
 const MainPage = ({}) => {
-  const [inputData, setInputData] = useState();
+  const [inputData, setInputData] = useState({
+    name: '',
+    email: '',
+    number: '',
+    monthlyPlan: '',
+    yearlyPlan: '',
+    monthlyService: '',
+    monthlyProfile: '',
+    monthlyStorage: '',
+    yrService: '',
+    yrStorage: '',
+    yrProfile: '',
+  });
   const [isActive, setIsActive] = useState(true);
 
   const count = useSelector((state) => state.counter.value);
