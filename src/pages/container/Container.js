@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
+import { useSelector, useDispatch } from 'react-redux';
+import {
+  decrement,
+  increment,
+} from '../../components/features/countControl/CountSlice';
+
 import YourInfo from '../../components/info/YourInfo';
 import SelectPlan from '../../components/plan/SelectPlan';
 import AddOn from '../../components/addOns/AddOn';
@@ -8,113 +14,25 @@ import Message from '../../components/message/Message';
 
 import './container.css';
 
-const MainPage = ({
-  count,
-  backBtn,
-  nextBtn,
-  setInputData,
-  inputData,
-  setIsActive,
-  isActive,
-  // data,
-  // setData,
-}) => {
-  const [isForm, setIsForm] = useState(true);
-
-  const {
-    email,
-    name,
-    number,
-    monthlyPlan,
-    yearlyPlan,
-    monthlyService,
-    monthlyStorage,
-    monthlyProfile,
-    yrService,
-    yrStorage,
-    yrProfile,
-  } = inputData;
-
-  //control form submission
-
-  // useEffect(() => {
-  //   if (inputData) {
-  //     setData([...data, inputData]);
-  //   }
-  // }, [inputData]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsForm(false);
-    if (inputData) {
-      let newData = [];
-      if (localStorage.getItem('data')) {
-        newData = [...JSON.parse(localStorage.getItem('data')), inputData];
-      } else {
-        newData = [inputData];
-      }
-      localStorage.setItem('data', JSON.stringify(newData));
-    }
-  };
-
-  // console.log(data);
+const MainPage = ({}) => {
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   return (
     <div className='form-cnt'>
-      <div>
-        {isForm ? (
-          <form className='form' id='formId'>
-            {count == 0 ? (
-              <YourInfo setInputData={setInputData} inputData={inputData} />
-            ) : count == 1 ? (
-              <SelectPlan
-                setInputData={setInputData}
-                inputData={inputData}
-                isActive={isActive}
-                setIsActive={setIsActive}
-              />
-            ) : count == 2 ? (
-              <AddOn
-                setInputData={setInputData}
-                inputData={inputData}
-                isActive={isActive}
-              />
-            ) : (
-              <Summary inputData={inputData} isActive={isActive} />
-            )}
-          </form>
-        ) : (
+      <form>
+        {count == 0 ? (
+          <YourInfo />
+        ) : count == 1 ? (
+          <SelectPlan />
+        ) : count == 2 ? (
+          <AddOn />
+        ) : count == 3 ? (
+          <Summary />
+        ) : count == 4 ? (
           <Message />
-        )}
-      </div>
-
-      <div className='cnt-btn'>
-        {count > 0 ? (
-          <button
-            className={`back-btn ${!isForm ? 'backBtn-on' : 'backBtn-off'}`}
-            onClick={backBtn}
-          >
-            Go Back
-          </button>
-        ) : (
-          <div className='empty-div'>don't go back</div>
-        )}
-        {count != 3 ? (
-          <button type='button' className='nxt-btn' onClick={nextBtn}>
-            Next
-          </button>
-        ) : (
-          <button
-            onClick={(e) => {
-              handleSubmit(e);
-            }}
-            type='submit'
-            className={`confirm-btn ${!isForm ? 'formBtnOn' : 'formBtnOff'}`}
-          >
-            confirm
-          </button>
-        )}
-      </div>
+        ) : null}
+      </form>
     </div>
   );
 };

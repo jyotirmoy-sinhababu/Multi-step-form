@@ -1,8 +1,12 @@
 import React from 'react';
 
+import { useSelector } from 'react-redux';
+
 import './sidebar.css';
 
-const SideBar = ({ count }) => {
+const SideBar = () => {
+  const count = useSelector((state) => state.counter.value);
+
   return (
     <div className='sidebar-cnt'>
       <div className='sidebar-small-cnt'>
