@@ -1,5 +1,12 @@
 import React from 'react';
 
+import { useDispatch } from 'react-redux';
+
+import {
+  decrement,
+  increment,
+} from '../../components/features/countControl/CountSlice';
+
 import './selectPlan.css';
 
 import advance from '../../assets/advanced.svg';
@@ -8,6 +15,8 @@ import pro from '../../assets/pro.svg';
 import ToggleBtn from '../toggleBtn/ToggleBtn';
 
 const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
+  const dispatch = useDispatch();
+
   //controls the click of add on buttons
 
   const handleClick = (amount) => {
@@ -131,6 +140,10 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
         <p className={`toggle-txt ${!isActive ? 'toggle-on' : 'toggle-off'}`}>
           yearly
         </p>
+      </div>
+      <div>
+        <button onClick={() => dispatch(decrement())}>Back</button>
+        <button onClick={() => dispatch(increment())}>Next</button>
       </div>
     </div>
   );

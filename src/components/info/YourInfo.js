@@ -1,8 +1,14 @@
 import React from 'react';
 
+import { useDispatch } from 'react-redux';
+
+import { increment } from '../../components/features/countControl/CountSlice';
+
 import './info.css';
 
 const YourInfo = ({ setInputData, inputData }) => {
+  const dispatch = useDispatch();
+
   // monitor changes
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
@@ -58,6 +64,9 @@ const YourInfo = ({ setInputData, inputData }) => {
             placeholder='e.g. 91 74512875'
           />
         </div>
+      </div>
+      <div>
+        <button onClick={() => dispatch(increment())}>Next</button>
       </div>
     </div>
   );

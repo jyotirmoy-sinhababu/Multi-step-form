@@ -1,9 +1,17 @@
 import React from 'react';
 
+import {
+  decrement,
+  increment,
+} from '../../components/features/countControl/CountSlice';
+
+import { useDispatch } from 'react-redux';
+
 import './summary.css';
 
 const Summary = ({ inputData, isActive }) => {
-  console.log(inputData.monthlyPlan);
+  const dispatch = useDispatch();
+
   return (
     <div className='summary-main-div'>
       <div className='summary-heading-cnt'>
@@ -125,6 +133,10 @@ const Summary = ({ inputData, isActive }) => {
           </div>
         </div>
       )}
+      <div>
+        <button onClick={() => dispatch(decrement())}>Back</button>
+        <button onClick={() => dispatch(increment())}>Next</button>
+      </div>
     </div>
   );
 };

@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-import { useSelector, useDispatch } from 'react-redux';
-import {
-  decrement,
-  increment,
-} from '../../components/features/countControl/CountSlice';
+import { useSelector } from 'react-redux';
 
 import YourInfo from '../../components/info/YourInfo';
 import SelectPlan from '../../components/plan/SelectPlan';
@@ -15,8 +11,9 @@ import Message from '../../components/message/Message';
 import './container.css';
 
 const MainPage = ({}) => {
+  const [isActive, setIsActive] = useState(true);
+
   const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
 
   return (
     <div className='form-cnt'>
@@ -24,9 +21,9 @@ const MainPage = ({}) => {
         {count == 0 ? (
           <YourInfo />
         ) : count == 1 ? (
-          <SelectPlan />
+          <SelectPlan isActive={isActive} setIsActive={setIsActive} />
         ) : count == 2 ? (
-          <AddOn />
+          <AddOn isActive={isActive} />
         ) : count == 3 ? (
           <Summary />
         ) : count == 4 ? (

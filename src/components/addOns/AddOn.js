@@ -1,8 +1,16 @@
 import React from 'react';
 
-import './addOn.css';
+import { useDispatch } from 'react-redux';
 
+import {
+  decrement,
+  increment,
+} from '../../components/features/countControl/CountSlice';
+
+import './addOn.css';
 const AddOn = ({ setInputData, inputData, isActive }) => {
+  const dispatch = useDispatch();
+
   // monitor change
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
@@ -143,6 +151,10 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
           </div>
         </div>
       )}
+      <div>
+        <button onClick={() => dispatch(decrement())}>Back</button>
+        <button onClick={() => dispatch(increment())}>Next</button>
+      </div>
     </div>
   );
 };
