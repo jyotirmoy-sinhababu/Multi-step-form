@@ -11,21 +11,33 @@ import Message from '../../components/message/Message';
 import './container.css';
 
 const MainPage = ({}) => {
+  const [inputData, setInputData] = useState();
   const [isActive, setIsActive] = useState(true);
 
   const count = useSelector((state) => state.counter.value);
+
+  console.log(inputData);
 
   return (
     <div className='form-cnt'>
       <form>
         {count == 0 ? (
-          <YourInfo />
+          <YourInfo inputData={inputData} setInputData={setInputData} />
         ) : count == 1 ? (
-          <SelectPlan isActive={isActive} setIsActive={setIsActive} />
+          <SelectPlan
+            inputData={inputData}
+            setInputData={setInputData}
+            isActive={isActive}
+            setIsActive={setIsActive}
+          />
         ) : count == 2 ? (
-          <AddOn isActive={isActive} />
+          <AddOn
+            inputData={inputData}
+            setInputData={setInputData}
+            isActive={isActive}
+          />
         ) : count == 3 ? (
-          <Summary />
+          <Summary inputData={inputData} isActive={isActive} />
         ) : count == 4 ? (
           <Message />
         ) : null}

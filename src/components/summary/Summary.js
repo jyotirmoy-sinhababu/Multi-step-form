@@ -135,7 +135,7 @@ const Summary = ({ inputData, isActive }) => {
       )}
       <div>
         <button onClick={() => dispatch(decrement())}>Back</button>
-        <button onClick={() => dispatch(increment())}>Next</button>
+        <button onClick={() => dispatch(increment())}>Save</button>
       </div>
     </div>
   );
