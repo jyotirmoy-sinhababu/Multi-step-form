@@ -13,32 +13,28 @@
   border-radius: 9px;
   height: 550px;
   width: 100%;
-  max-width: 800px;
   padding: 12px;
   box-shadow: 5px 10px 18px #888888;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .main-home-cnt {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-left: 100px;
-    max-width: 100%;
-    width: 1500px;
-    height: fit-content;
+    padding-top: 0px;
+    width: 100vh;
+    padding-left: 0%;
   }
 
   .home-cnt {
     display: flex;
+    gap: 60px;
     flex-direction: column;
-    gap: 30px;
     border-radius: 9px;
-    height: 550px;
+    height: 1050px;
     width: 100%;
-    max-width: 800px;
-    padding: 12px;
+    padding: 0px;
     box-shadow: none;
   }
 }

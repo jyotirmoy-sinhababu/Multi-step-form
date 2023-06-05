@@ -41,16 +41,33 @@
 @media screen and (max-width: 650px) {
   .sidebar-cnt {
     display: none;
-    padding-left: 0px;
   }
 
   .sideBar-mobile-view {
     display: flex;
-    background: url('../../assets/sidebarmobile.svg');
-    background-repeat: no-repeat;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    min-height: 200px;
+    background: url('../../assets/sidebar.svg');
+    height: 400px;
+    width: 700px;
+  }
+
+  .sidebar-mobile-num-cnt {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+  }
+
+  .isOn {
+    background-color: hsl(206, 94%, 87%);
+  }
+
+  .num {
+    font-size: 24px;
+    font-weight: 600;
   }
 }

@@ -48,17 +48,25 @@ const SideBar = () => {
         </div>
       </div>{' '}
       <div className='sideBar-mobile-view'>
-        <div className={`sidebar-num-cnt ${count == 3 ? 'on' : 'off'}`}>
-          <p>1</p>
+        <div
+          className={`sidebar-mobile-num-cnt ${count == 3 ? 'isOn' : 'off'}`}
+        >
+          <p className='num'>1</p>
         </div>{' '}
-        <div className={`sidebar-num-cnt ${count == 3 ? 'on' : 'off'}`}>
-          <p>2</p>
+        <div
+          className={`sidebar-mobile-num-cnt ${count == 3 ? 'isOn' : 'off'}`}
+        >
+          <p className='num'>2</p>
         </div>{' '}
-        <div className={`sidebar-num-cnt ${count == 3 ? 'on' : 'off'}`}>
-          <p>3</p>
+        <div
+          className={`sidebar-mobile-num-cnt ${count == 3 ? 'isOn' : 'off'}`}
+        >
+          <p className='num'>3</p>
         </div>{' '}
-        <div className={`sidebar-num-cnt ${count == 3 ? 'on' : 'off'}`}>
-          <p>4</p>
+        <div
+          className={`sidebar-mobile-num-cnt ${count == 3 ? 'isOn' : 'off'}`}
+        >
+          <p className='num'>4</p>
         </div>
       </div>
     </>
