@@ -9,7 +9,6 @@ const SideBar = () => {
 
   return (
     <>
-      {' '}
       <div className='sidebar-cnt'>
         <div className='sidebar-small-cnt'>
           <div className={`sidebar-num-cnt ${count == 0 ? 'on' : 'off'}`}>
