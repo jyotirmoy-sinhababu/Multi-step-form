@@ -48,8 +48,9 @@
     justify-content: space-around;
     align-items: center;
     background: url('../../assets/sidebar.svg');
-    height: 400px;
+    height: 600px;
     width: 700px;
+    position: absolute;
   }
 
   .sidebar-mobile-num-cnt {
