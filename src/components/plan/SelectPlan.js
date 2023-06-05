@@ -141,9 +141,19 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
           yearly
         </p>
       </div>
-      <div>
-        <button onClick={() => dispatch(decrement())}>Back</button>
-        <button onClick={() => dispatch(increment())}>Next</button>
+      <div className='select-btn-cnt'>
+        <button
+          className='select-back-btn'
+          onClick={() => dispatch(decrement())}
+        >
+          Go back
+        </button>
+        <button
+          className='select-nxt-btn'
+          onClick={() => dispatch(increment())}
+        >
+          Next
+        </button>
       </div>
     </div>
   );

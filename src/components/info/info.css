@@ -41,6 +41,17 @@
   margin-top: 40px;
 }
 
+.info-btn {
+  width: 99px;
+  height: 44px;
+  border-radius: 7px;
+  color: aliceblue;
+  background-color: hsl(213, 96%, 18%);
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 650px) {
   .info-cnt {
     padding-left: 35px;

@@ -68,3 +68,27 @@
   color: hsl(213, 85%, 3%);
   opacity: 0.9;
 }
+
+.select-btn-cnt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-back-btn {
+  border: none;
+  background-color: white;
+  color: hsl(213, 96%, 18%);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.select-nxt-btn {
+  width: 99px;
+  height: 44px;
+  border-radius: 7px;
+  color: aliceblue;
+  background-color: hsl(213, 96%, 18%);
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+}

@@ -151,9 +151,19 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
           </div>
         </div>
       )}
-      <div>
-        <button onClick={() => dispatch(decrement())}>Back</button>
-        <button onClick={() => dispatch(increment())}>Next</button>
+      <div className='addOn-btn-cnt'>
+        <button
+          className='addOn-back-btn'
+          onClick={() => dispatch(decrement())}
+        >
+          Go back
+        </button>
+        <button
+          className='addOn-next-btn'
+          onClick={() => dispatch(increment())}
+        >
+          Next
+        </button>
       </div>
     </div>
   );

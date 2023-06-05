@@ -136,9 +136,19 @@ const Summary = ({ inputData, isActive }) => {
           </div>
         </div>
       )}
-      <div>
-        <button onClick={() => dispatch(decrement())}>Back</button>
-        <button onClick={() => dispatch(increment())}>Save</button>
+      <div className='summary-btn-cnt'>
+        <button
+          className='summary-back-btn'
+          onClick={() => dispatch(decrement())}
+        >
+          Go back
+        </button>
+        <button
+          className='summary-save-btn'
+          onClick={() => dispatch(increment())}
+        >
+          Confirm
+        </button>
       </div>
     </div>
   );

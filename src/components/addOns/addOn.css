@@ -49,3 +49,27 @@
   font-weight: 400;
   opacity: 0.9;
 }
+
+.addOn-btn-cnt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addOn-back-btn {
+  border: none;
+  color: hsl(243, 100%, 62%);
+  font-size: 18px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.addOn-next-btn {
+  width: 99px;
+  height: 44px;
+  border-radius: 7px;
+  color: aliceblue;
+  background-color: hsl(213, 96%, 18%);
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+}

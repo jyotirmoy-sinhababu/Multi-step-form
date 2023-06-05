@@ -106,3 +106,27 @@
   font-weight: 500;
   font-family: 'Oswald', sans-serif;
 }
+
+.summary-btn-cnt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-save-btn {
+  width: 99px;
+  height: 44px;
+  border-radius: 7px;
+  color: aliceblue;
+  background-color: hsl(213, 88%, 41%);
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.summary-back-btn {
+  color: blue;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
