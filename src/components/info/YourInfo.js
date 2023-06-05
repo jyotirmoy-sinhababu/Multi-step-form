@@ -65,8 +65,10 @@ const YourInfo = ({ setInputData, inputData }) => {
           />
         </div>
       </div>
-      <div>
-        <button onClick={() => dispatch(increment())}>Next</button>
+      <div className='info-btn-cnt'>
+        <button className='info-btn' onClick={() => dispatch(increment())}>
+          Next
+        </button>
       </div>
     </div>
   );

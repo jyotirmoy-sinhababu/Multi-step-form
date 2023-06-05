@@ -5,12 +5,15 @@
   padding-left: 19px;
   padding-top: 42px;
   gap: 12px;
-  position: relative;
   background: url('../../assets/sidebar.svg');
   height: 500px;
   max-width: 270px;
   width: 100%;
   border-radius: 7px;
+}
+
+.sideBar-mobile-view {
+  display: none;
 }
 
 .sidebar-small-cnt {
@@ -36,26 +39,13 @@
 
 @media screen and (max-width: 650px) {
   .sidebar-cnt {
-    display: flex;
-    background-repeat: no-repeat;
-    padding-left: 19px;
-    padding-top: 42px;
-    gap: 12px;
-    position: relative;
-    background: url('../../assets/sidebarmobile.svg');
-    height: 600px;
-    max-width: 470px;
-    width: 100%;
-    border-radius: 7px;
-  }
-
-  .sidebar-para-cnt {
     display: none;
   }
 
-  .sidebar-small-cnt {
+  .sideBar-mobile-view {
     display: flex;
-    flex-direction: row;
-    gap: 19px;
+    background: url('../../assets/sidebarmobile.svg');
+    justify-content: space-around;
+    width: 100%;
   }
 }
