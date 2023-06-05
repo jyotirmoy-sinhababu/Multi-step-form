@@ -40,12 +40,15 @@
 @media screen and (max-width: 650px) {
   .sidebar-cnt {
     display: none;
+    padding-left: 0px;
   }
 
   .sideBar-mobile-view {
     display: flex;
     background: url('../../assets/sidebarmobile.svg');
+    background-repeat: no-repeat;
     justify-content: space-around;
     width: 100%;
+    min-height: 300px;
   }
 }
