@@ -42,7 +42,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
                 <p className='input-infrm-txt'>Access to multiplayer game</p>
               </div>
               <div>
-                <p>+$1/mo</p>
+                <p className='addOn-value'>+$1/mo</p>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
                 <p className='input-infrm-txt'>Extra 1TB of cloud storage </p>
               </div>
               <div>
-                <p>+$2/mo</p>
+                <p className='addOn-value'>+$2/mo</p>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
                 <p className='input-infrm-txt'>Custom theme on your profile </p>
               </div>
               <div>
-                <p>+$2/mo</p>
+                <p className='addOn-value'>+$2/mo</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
                 <p className='input-infrm-txt'>Access to multiplayer game</p>
               </div>
               <div>
-                <p>+$10/yr</p>
+                <p className='addOn-value'>+$10/yr</p>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
                 <p className='input-infrm-txt'>Extra 1TB of cloud storage </p>
               </div>
               <div>
-                <p>+$20/yr</p>
+                <p className='addOn-value'>+$20/yr</p>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@ const AddOn = ({ setInputData, inputData, isActive }) => {
                 <p className='input-infrm-txt'>Custom theme on your profile </p>
               </div>
               <div>
-                <p>+$20/yr</p>
+                <p className='addOn-value'>+$20/yr</p>
               </div>
             </div>
           </div>

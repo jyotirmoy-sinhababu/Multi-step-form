@@ -94,3 +94,52 @@
   font-size: 19px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 660px) {
+  .plan-cnt {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    width: 410px;
+    height: 680px;
+  }
+
+  .plan-btn-cnt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .plan-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+    height: 98px;
+    border-radius: 9px;
+    font-size: 28px;
+    padding-left: 10px;
+  }
+
+  .img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .plan-toggleBtn-cnt {
+    width: 400px;
+    height: 98px;
+  }
+
+  .toggle-txt {
+    font-size: 28px;
+  }
+
+  .plan-header {
+    font-size: 38px;
+  }
+
+  .plan-para {
+    font-size: 23px;
+  }
+}

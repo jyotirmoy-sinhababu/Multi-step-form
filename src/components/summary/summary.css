@@ -132,3 +132,38 @@
   background-color: white;
   cursor: pointer;
 }
+
+@media screen and (max-width: 660px) {
+  .summary-main-div {
+    height: 600px;
+  }
+
+  .summary-header {
+    font-size: 38px;
+  }
+
+  .summary-para {
+    font-size: 28px;
+  }
+
+  .summary-data-cnt {
+    height: 300px;
+  }
+
+  .arcade-txt,
+  .arcade-monthly,
+  .arcade-data,
+  .arcade-yr {
+    font-size: 23px;
+  }
+
+  .online-service-txt,
+  .storage-txt,
+  .total-txt {
+    font-size: 21px;
+  }
+
+  .summary-btn-cnt {
+    padding-left: 25px;
+  }
+}

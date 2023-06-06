@@ -75,3 +75,36 @@
   font-size: 19px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 660px) {
+  .addOn {
+    height: 780px;
+    gap: 65px;
+  }
+
+  .addOn-header-txt {
+    font-size: 38px;
+  }
+
+  .addOn-para-txt {
+    font-size: 23px;
+  }
+
+  .addOn-input-main-cnt {
+    height: 580px;
+  }
+
+  .addOn-input-cnt {
+    height: 100px;
+  }
+  .addOn-label {
+    font-size: 28px;
+  }
+  .input-infrm-txt {
+    font-size: 18px;
+  }
+
+  .addOn-value {
+    font-size: 17px;
+  }
+}

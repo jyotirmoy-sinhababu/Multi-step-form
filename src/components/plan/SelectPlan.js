@@ -28,8 +28,10 @@ const SelectPlan = ({ setInputData, inputData, isActive, setIsActive }) => {
   return (
     <div className='plan-cnt'>
       <div className='plan-small-cnt'>
-        <h2>Select your plan</h2>
-        <p>you have the option of monthly or yearly billing</p>
+        <h2 className='plan-header'>Select your plan</h2>
+        <p className='plan-para'>
+          you have the option of monthly or yearly billing
+        </p>
       </div>
       {isActive ? (
         <div className='plan-btn-cnt'>
