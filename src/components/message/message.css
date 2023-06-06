@@ -35,3 +35,23 @@
   font-weight: 400;
   opacity: 0.5;
 }
+
+@media screen and (max-width: 660px) {
+  .message-cnt {
+    height: 680px;
+  }
+
+  .message-header {
+    font-size: 58px;
+  }
+
+  .message-content {
+    font-size: 38px;
+    padding-left: 35px;
+  }
+
+  .message-img {
+    height: 150px;
+    width: 150px;
+  }
+}
