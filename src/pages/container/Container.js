@@ -32,7 +32,7 @@ const MainPage = ({}) => {
 
   return (
     <div className='form-cnt'>
-      <form autoComplete='on'>
+      <form className='form' autoComplete='on'>
         {count == 0 ? (
           <YourInfo inputData={inputData} setInputData={setInputData} />
         ) : count == 1 ? (

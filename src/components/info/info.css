@@ -53,4 +53,20 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .input-box {
+    height: 67px;
+    font-size: 28px;
+  }
 
+  .input-label {
+    font-size: 28px;
+  }
+
+  .info-cnt-header {
+    font-size: 48px;
+  }
+  .info-note {
+    font-size: 23px;
+  }
+}
