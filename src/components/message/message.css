@@ -36,7 +36,7 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 460px) {
   .message-cnt {
     height: 680px;
   }

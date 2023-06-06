@@ -133,7 +133,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 460px) {
   .summary-main-div {
     height: 600px;
   }

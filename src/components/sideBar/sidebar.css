@@ -38,7 +38,7 @@
   background-color: hsl(206, 94%, 87%);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   .sidebar-cnt {
     display: none;
   }

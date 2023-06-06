@@ -95,7 +95,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 460px) {
   .plan-cnt {
     display: flex;
     flex-direction: column;
